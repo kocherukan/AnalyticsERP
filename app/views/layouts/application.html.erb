@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Analytics</title>
+  <%= stylesheet_link_tag    "/assets/application.css", :media => "all" %> 
+  <%= stylesheet_link_tag    "/assets/reset.css" , :media => "screen" %>
+<%= stylesheet_link_tag    "/assets/layout.css" , :media => "screen" %>
+<%= stylesheet_link_tag    "/assets/themes.css" , :media => "screen" %>
+<%= stylesheet_link_tag    "/assets/typography.css" , :media => "screen" %>
+<%= stylesheet_link_tag    "/assets/styles.css" , :media => "screen" %>
+<%= stylesheet_link_tag    "/assets/shCore.css" , :media => "screen" %>
+<%= stylesheet_link_tag    "/assets/bootstrap.css", :media => "screen" %>
+<%= stylesheet_link_tag    "/assets/jquery.jqplot.css", :media => "screen" %>
+<%= stylesheet_link_tag    "/assets/data-table.css", :media => "screen" %>
+<%= stylesheet_link_tag    "/assets/form.css" , :media => "screen" %>
+<%= stylesheet_link_tag    "/assets/ui-elements.css" , :media => "screen" %>
+<%= stylesheet_link_tag    "/assets/wizard.css" , :media => "screen" %>
+<%= stylesheet_link_tag    "/assets/sprite.css", :media => "screen" %>
+<%= stylesheet_link_tag    "/assets/gradient.css" , :media => "screen" %>
+  
+  <%= javascript_include_tag "/assets/application.js" %>
+  <%= javascript_include_tag "/assets/jquery-1.7.1.min.js" %>
+<%= javascript_include_tag "/assets/jquery-ui-1.8.18.custom.min.js" %>
+<%= javascript_include_tag "/assets/jquery.ui.touch-punch.js" %>
+<%= javascript_include_tag "/assets/chosen.jquery.js" %>
+<%= javascript_include_tag "/assets/uniform.jquery.js" %>
+<%= javascript_include_tag "/assets/bootstrap-dropdown.js" %>
+<%= javascript_include_tag "/assets/bootstrap-colorpicker.js" %>
+<%= javascript_include_tag "/assets/sticky.full.js" %>
+<%= javascript_include_tag "/assets/jquery.noty.js" %>
+<%= javascript_include_tag "/assets/selectToUISlider.jQuery.js" %>
+<%= javascript_include_tag "/assets/fg.menu.js" %>
+<%= javascript_include_tag "/assets/jquery.tagsinput.js" %>
+<%= javascript_include_tag "/assets/jquery.cleditor.js" %>
+<%= javascript_include_tag "/assets/jquery.tipsy.js" %>
+<%= javascript_include_tag "/assets/jquery.peity.js" %>
+<%= javascript_include_tag "/assets/jquery.simplemodal.js" %>
+<%= javascript_include_tag "/assets/jquery.jBreadCrumb.1.1.js" %>
+<%= javascript_include_tag "/assets/jquery.colorbox-min.js" %>
+<%= javascript_include_tag "/assets/jquery.idTabs.min.js" %>
+<%= javascript_include_tag "/assets/jquery.multiFieldExtender.min.js" %>
+<%= javascript_include_tag "/assets/jquery.confirm.js" %>
+<%= javascript_include_tag "/assets/elfinder.min.js" %>
+<%= javascript_include_tag "/assets/accordion.jquery.js" %>
+<%= javascript_include_tag "/assets/autogrow.jquery.js" %>
+<%= javascript_include_tag "/assets/check-all.jquery.js" %>
+<%= javascript_include_tag "/assets/jquery.dataTables.js" %>
+<%= javascript_include_tag "/assets/ZeroClipboard.js" %>
+
+<%= javascript_include_tag "/assets/jeditable.jquery.js" %>
+<%= javascript_include_tag "/assets/duallist.jquery.js" %>
+<%= javascript_include_tag "/assets/easing.jquery.js" %>
+<%= javascript_include_tag "/assets/full-calendar.jquery.js" %>
+<%= javascript_include_tag "/assets/input-limiter.jquery.js" %>
+<%= javascript_include_tag "/assets/inputmask.jquery.js" %>
+<%= javascript_include_tag "/assets/iphone-style-checkbox.jquery.js" %>
+<%= javascript_include_tag "/assets/meta-data.jquery.js" %>
+<%= javascript_include_tag "/assets/quicksand.jquery.js" %>
+<%= javascript_include_tag "/assets/raty.jquery.js" %>
+<%= javascript_include_tag "/assets/smart-wizard.jquery.js" %>
+<%= javascript_include_tag "/assets/stepy.jquery.js" %>
+<%= javascript_include_tag "/assets/treeview.jquery.js" %>
+<%= javascript_include_tag "/assets/ui-accordion.jquery.js" %>
+<%= javascript_include_tag "/assets/vaidation.jquery.js" %>
+<%= javascript_include_tag "/assets/mosaic.1.0.1.min.js" %>
+<%= javascript_include_tag "/assets/jquery.collapse.js" %>
+<%= javascript_include_tag "/assets/jquery.cookie.js" %>
+<%= javascript_include_tag "/assets/jquery.autocomplete.min.js" %>
+<%= javascript_include_tag "/assets/localdata.js" %>
+<%= javascript_include_tag "/assets/excanvas.min.js" %>
+<%= javascript_include_tag "/assets/jquery.jqplot.min.js" %>
+<%= javascript_include_tag "/assets/chart-plugins/jqplot.dateAxisRenderer.min.js" %>
+<%= javascript_include_tag "/assets/chart-plugins/jqplot.cursor.min.js" %>
+<%= javascript_include_tag "/assets/chart-plugins/jqplot.logAxisRenderer.min.js" %>
+<%= javascript_include_tag "/assets/chart-plugins/jqplot.canvasTextRenderer.min.js" %>
+<%= javascript_include_tag "/assets/chart-plugins/jqplot.canvasAxisTickRenderer.min.js" %>
+<%= javascript_include_tag "/assets/chart-plugins/jqplot.highlighter.min.js" %>
+<%= javascript_include_tag "/assets/chart-plugins/jqplot.pieRenderer.min.js" %>
+<%= javascript_include_tag "/assets/chart-plugins/jqplot.barRenderer.min.js" %>
+<%= javascript_include_tag "/assets/chart-plugins/jqplot.categoryAxisRenderer.min.js" %>
+<%= javascript_include_tag "/assets/chart-plugins/jqplot.pointLabels.min.js" %>
+<%= javascript_include_tag "/assets/chart-plugins/jqplot.meterGaugeRenderer.min.js" %>
+<%= javascript_include_tag "/assets/custom-scripts.js" %>
+  <%= csrf_meta_tags %>
+</head>
+<body id="theme-default" class="full_block">
+<div id="left_bar">
+	
+	
+	<div id="sidebar">
+		<div id="secondary_nav">
+			<ul id="sidenav" class="accordion_mnu collapsible">
+				<li><a href="#"><span class="nav_icon computer_imac"></span> Dashboard<span class="alert_notify blue">4</span><span class="up_down_arrow">&nbsp;</span></a>
+				<ul class="acitem">
+					<li><a href="dashboard.html"><span class="list-icon">&nbsp;</span>Dashboard Main</a></li>
+					<li><a href="dashboard-01.html"><span class="list-icon">&nbsp;</span>Dashboard 01</a></li>
+					<li><a href="dashboard-02.html"><span class="list-icon">&nbsp;</span>Dashboard 02</a></li>
+					<li><a href="dashboard-03.html"><span class="list-icon">&nbsp;</span>Dashboard 03</a></li>
+					<li><a href="dashboard-04.html"><span class="list-icon">&nbsp;</span>Dashboard 04</a></li>
+				</ul>
+				</li>
+				<li><a href="#"><span class="nav_icon frames"></span> Forms<span class="alert_notify blue">8</span><span class="up_down_arrow">&nbsp;</span></a>
+				<ul class="acitem">
+					<li><a href="form-elements.html"><span class="list-icon">&nbsp;</span>All Forms Elements</a></li>
+					<li><a href="left-label-form.html"><span class="list-icon">&nbsp;</span>Left Label Form</a></li>
+					<li><a href="top-label-form.html"><span class="list-icon">&nbsp;</span>Top Label Form</a></li>
+					<li><a href="form-xtras.html"><span class="list-icon">&nbsp;</span>Additional Forms (3)</a></li>
+					<li><a href="form-validation.html"><span class="list-icon">&nbsp;</span>Form Validation</a></li>
+					<li><a href="signup-form.html"><span class="list-icon">&nbsp;</span>Signup Form</a></li>
+					<li><a href="content-post.html"><span class="list-icon">&nbsp;</span>Content Post Form</a></li>
+					<li><a href="wizard.html"><span class="list-icon">&nbsp;</span>wizard</a></li>
+				</ul>
+				</li>
+				<li><a href="table.html"><span class="nav_icon blocks_images"></span> Tables</a>
+				</li>
+				<li><a href="ui-elements.html"><span class="nav_icon list_images"></span>User Interface Elements</a></li>
+				<li><a href="buttons-icons.html"><span class="nav_icon coverflow"></span>Butons And Icons</a></li>
+				<li><a href="widgets.html"><span class="nav_icon list_image"></span>All Widgets</a></li>
+				<li><a href="#"><span class="nav_icon documents"></span>Pages<span class="alert_notify blue">5</span><span class="up_down_arrow">&nbsp;</span></a>
+				<ul class="acitem">
+					<li><a href="post-preview.html"><span class="list-icon">&nbsp;</span>Content</a></li>
+					<li><a href="login-01.html" target="_blank"><span class="list-icon">&nbsp;</span>Login 01</a></li>
+					<li><a href="login-02.html" target="_blank"><span class="list-icon">&nbsp;</span>Login 02</a></li>
+					<li><a href="login-03.html" target="_blank"><span class="list-icon">&nbsp;</span>Login 03</a></li>
+					<li><a href="forgot-pass.html" target="_blank"><span class="list-icon">&nbsp;</span>Forgot Password</a></li>
+   					<li><a href="gradient.html" target="_blank"><span class="list-icon">&nbsp;</span>Colors Gradient</a></li>				</ul>
+				</li>
+				<li><a href="typography.html"><span class="nav_icon list"></span>Typography</a></li>
+				<li><a href="#"><span class="nav_icon frames"></span>Grid<span class="alert_notify blue">2</span><span class="up_down_arrow">&nbsp;</span></a>
+				<ul class="acitem">
+					<li><a href="content-grid.html"><span class="list-icon">&nbsp;</span>Content Grid</a></li>
+					<li><a href="form-grid.html"><span class="list-icon">&nbsp;</span>Form Grid</a></li>
+				</ul>
+				</li>
+				<li><a href="chart.html"><span class="nav_icon chart_8"></span>Chart/Graph</a></li>
+				<li><a href="gallery.html"><span class="nav_icon image2_2"></span>Gallery</a></li>
+				<li><a href="calendar.html"><span class="nav_icon month_calendar"></span>Calendar</a></li>
+				<li><a href="file-manager.html"><span class="nav_icon folder"></span>File Manager</a></li>
+				<li><a href="#"><span class="nav_icon bulls_eye"></span>Error Pages<span class="alert_notify blue">5</span><span class="up_down_arrow">&nbsp;</span></a>
+				<ul class="acitem">
+					<li><a href="403.html" target="_blank"><span class="list-icon">&nbsp;</span>403</a></li>
+					<li><a href="404.html" target="_blank"><span class="list-icon">&nbsp;</span>404</a></li>
+					<li><a href="405.html" target="_blank"><span class="list-icon">&nbsp;</span>405</a></li>
+					<li><a href="500.html" target="_blank"><span class="list-icon">&nbsp;</span>500</a></li>
+					<li><a href="503.html" target="_blank"><span class="list-icon">&nbsp;</span>503</a></li>
+				</ul>
+				</li>
+				<li><a href="invoice.html"><span class="nav_icon money_2"></span>Invoice</a></li>
+				<li><a href="#"><span class="nav_icon mail"></span>Email Templates<span class="alert_notify blue">3</span><span class="up_down_arrow">&nbsp;</span></a>
+				<ul class="acitem">
+					<li><a href="email-templates/forgot-pass-email-template.html" target="_blank"><span class="list-icon">&nbsp;</span>Forgot Password</a></li>
+					<li><a href="email-templates/registration-confirmation-email-template.html" target="_blank"><span class="list-icon">&nbsp;</span>Registaion Confirmation</a></li>
+				</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+  <div id="container">
+    <div id="header" class="blue_lin">
+		<div class="header_left">
+			<div class="logo">
+				<img src="/assets/logo.png" width="160" height="60" alt="Ekra">
+			</div>
+			
+		</div>
+		<div class="header_right">
+			<div id="top_notification">
+				<ul>
+					<li class="dropdown">
+					<a href="#" data-toggle="dropdown" class="dropdown-toggle alert"><span class="icon"></span><span class="alert_notify orange">30</span></a>
+					<div class="notification_list dropdown-menu pull-left blue_d">
+						<div class="white_lin nlist_block">
+							<ul>
+								<li>
+								<div class="nlist_thumb">
+									<img src="images/photo_60x60.jpg" width="40" height="40" alt="img">
+								</div>
+								<div class="list_inf">
+									<a href="#">Cras erat diam, consequat quis tincidunt nec, eleifend.</a>
+								</div>
+								</li>
+								<li>
+								<div class="nlist_thumb">
+									<img src="images/photo_60x60.jpg" width="40" height="40" alt="img">
+								</div>
+								<div class="list_inf">
+									<a href="#">Donec neque leo, ullamcorper eget aliquet sit amet.</a>
+								</div>
+								</li>
+								<li>
+								<div class="nlist_thumb">
+									<img src="images/photo_60x60.jpg" width="40" height="40" alt="img">
+								</div>
+								<div class="list_inf">
+									<a href="#">Nam euismod dolor ac lacus facilisis imperdiet.</a>
+								</div>
+								</li>
+							</ul>
+							<span class="btn_24_blue"><a href="#">View All</a></span>
+						</div>
+					</div>
+					</li>
+					<li class="inbox dropdown">
+					<a href="#" data-toggle="dropdown" class="dropdown-toggle"><span class="icon"></span><span class="alert_notify blue">30</span></a>
+					<div class="notification_list dropdown-menu blue_d">
+						<div class="white_lin nlist_block">
+							<ul>
+								<li>
+								<div class="nlist_thumb">
+									<img src="images/photo_60x60.jpg" width="40" height="40" alt="img">
+								</div>
+								<div class="list_inf">
+									<a href="#">Cras erat diam, consequat quis tincidunt nec, eleifend.</a>
+								</div>
+								</li>
+								<li>
+								<div class="nlist_thumb">
+									<img src="images/photo_60x60.jpg" width="40" height="40" alt="img">
+								</div>
+								<div class="list_inf">
+									<a href="#">Donec neque leo, ullamcorper eget aliquet sit amet.</a>
+								</div>
+								</li>
+								<li>
+								<div class="nlist_thumb">
+									<img src="images/photo_60x60.jpg" width="40" height="40" alt="img">
+								</div>
+								<div class="list_inf">
+									<a href="#">Nam euismod dolor ac lacus facilisis imperdiet.</a>
+								</div>
+								</li>
+							</ul>
+							<span class="btn_24_blue"><a href="#">View All</a></span>
+						</div>
+					</div>
+					</li>
+				</ul>
+			</div>
+			<div id="user_nav">
+				<ul>
+					<li class="user_thumb"><a href="#"><span class="icon"><img src="images/user_thumb.png" width="30" height="30" alt="User"></span></a></li>
+					<li class="user_info"><span class="user_name">Administrator</span><span><a href="#">Profile</a> &#124; <a href="#">Settings</a> &#124; <a href="#">Help&#63;</a></span></li>
+					<li class="logout"><a href="#"><span class="icon"></span>Logout</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+    <div class="page_title">
+		<span class="title_icon"><span class="blocks_images"></span></span>
+		<h3>Tables</h3>
+		<div class="top_search">
+			<form action="#" method="post">
+				<ul id="search_box">
+					<li>
+					<input name="" type="text" class="search_input" id="suggest1" placeholder="Search...">
+					</li>
+					<li>
+					<input name="" type="submit" value="" class="search_btn">
+					</li>
+				</ul>
+			</form>
+		</div>
+	</div>
+    <div id="content">
+      <div class="grid_container">
+        
+        
+
+    
+    
+   
+  <%= yield %>  
+                
+      </div>
+      
+    </div>
+  </div>
+	
+
+</body>
+</html>
